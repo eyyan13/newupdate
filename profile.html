@@ -1,0 +1,2386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <link rel="icon" type="image/android-chrome-512x512.png" href="android-chrome-512x512.png">
+  
+  <title>Company Profile - AKBAR & ASSOCIATES - Consulting Engineers</title>
+  <meta name="description" content="AKBAR & ASSOCIATES: Dedicated to excellence in consulting engineering, delivering innovative solutions for your projects with precision and expertise.">
+  <meta name="keywords" content="consulting engineers, Akbar and Associates, engineering solutions, innovative engineering, project consultancy">
+  <meta name="author" content="Akbar & Associates">
+  <meta name="robots" content="index, follow">
+
+  <meta property="og:title" content="AKBAR & ASSOCIATES - Consulting Engineers">
+  <meta property="og:description" content="Dedicated to excellence in consulting engineering, delivering innovative solutions for your projects with precision and expertise.">
+  <meta property="og:image" content="assets/img/hero-carousel/hero-carousel-1.jpg">
+  <meta property="og:url" content="https://www.akbarassociates.com">
+  <meta property="og:type" content="website">
+
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="AKBAR & ASSOCIATES - Consulting Engineers">
+  <meta property="twitter:description" content="Dedicated to excellence in consulting engineering, delivering innovative solutions for your projects with precision and expertise.">
+  <meta property="twitter:image" content="assets/img/hero-carousel/hero-carousel-1.jpg">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AKBAR & ASSOCIATES",
+    "url": "https://www.akbarassociates.com",
+    "logo": "android-chrome-512x512.png",
+    "description": "Dedicated to excellence in consulting engineering, delivering innovative solutions for your projects with precision and expertise.",
+    "sameAs": [
+      "https://www.facebook.com/akbarassociates",
+      "https://twitter.com/akbarassociates",
+      "https://www.linkedin.com/company/akbar-associates"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+  
+  <style>
+    .completed-project-section-hidden table th:nth-child(1),
+    .completed-project-section-hidden table td:nth-child(1) {
+      width: 70% !important;
+    }
+    .completed-project-section-hidden table th:nth-child(2),
+    .completed-project-section-hidden table td:nth-child(2) {
+      width: 30% !important;
+      text-align: left !important;
+    }
+
+    body {
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 700;
+    }
+
+    .card, .table {
+      font-size: 1.05rem;
+    }
+
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/img/hero-carousel/hero-carousel-1.jpg') center/cover no-repeat;
+      color: white;
+      padding: 120px 0 80px 0;
+      margin-top: 80px;
+    }
+    
+    .section-title {
+      position: relative;
+      margin-bottom: 40px;
+      font-weight: 700;
+      color: #f5c43d;
+    }
+    
+    .section-title:after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 4px;
+      background: #f5c43d;
+      margin: 15px auto 0;
+    }
+    
+    .service-card, .project-card, .team-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    .service-card:hover, .project-card:hover, .team-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+    
+    .service-icon {
+      font-size: 2.5rem;
+      color: #f5c43d;
+      margin-bottom: 20px;
+    }
+    
+    .stats-section {
+      background: #6a6a6b;
+      color: white;
+    }
+    
+    .stat-number {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #f5c43d;
+    }
+    
+    .project-table th {
+      background-color: #f5c43d;
+      color: white;
+      border: none;
+    }
+    
+    .team-member {
+      border-left: 4px solid #f5c43d;
+      padding-left: 20px;
+    }
+
+    .completed-project-section-hidden {
+      display: none;
+    }
+
+    .print-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 1000;
+      background-color: #6a6a6b;
+      border-color: #f5c43d;
+    }
+    
+    .print-btn:hover {
+      background-color: #f5c43d;
+      border-color: #f5c43d;
+      color: #58595b;
+    }
+
+    .load-more-btn {
+      background: linear-gradient(145deg, #f5c43d, #e6b029);
+      border: none;
+      padding: 12px 30px;
+      border-radius: 8px;
+      color: #333;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 15px rgba(245, 196, 61, 0.3);
+    }
+
+    .load-more-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(245, 196, 61, 0.4);
+      background: linear-gradient(145deg, #e6b029, #f5c43d);
+    }
+
+    .project-section-hidden {
+      display: none;
+    }
+
+    .projects-redirect-btn {
+      background: linear-gradient(145deg, #6a6a6b, #58595b);
+      border: none;
+      padding: 20px 40px;
+      border-radius: 15px;
+      color: white;
+      font-size: 18px;
+      font-weight: 700;
+      text-decoration: none;
+      display: inline-block;
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      box-shadow: 
+        0 15px 30px rgba(106, 106, 107, 0.4),
+        inset 0 2px 4px rgba(255, 255, 255, 0.2),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      overflow: hidden;
+    }
+
+    .projects-redirect-btn::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(245, 196, 61, 0.3), transparent);
+      transition: left 0.6s ease;
+    }
+
+    .projects-redirect-btn:hover::before {
+      left: 100%;
+    }
+
+    .projects-redirect-btn:hover {
+      transform: translateY(-8px) scale(1.05);
+      box-shadow: 
+        0 25px 50px rgba(106, 106, 107, 0.6),
+        inset 0 3px 6px rgba(255, 255, 255, 0.3),
+        inset 0 -3px 6px rgba(0, 0, 0, 0.4),
+        0 0 30px rgba(245, 196, 61, 0.3);
+      color: #f5c43d;
+    }
+
+    .projects-redirect-btn:active {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 
+        0 15px 30px rgba(106, 106, 107, 0.4),
+        inset 0 2px 4px rgba(255, 255, 255, 0.2),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .projects-redirect-container {
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .projects-redirect-btn i {
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .projects-redirect-btn:hover i {
+      transform: translateX(5px);
+    }
+    
+    @media print {
+      .header, .print-btn, .footer, .load-more-btn, .projects-redirect-container {
+        display: none !important;
+      }
+      .hero-section {
+        padding: 40px 0;
+        margin-top: 0;
+      }
+      .project-section-hidden {
+        display: block !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <h1 style="color: #f5c43d;">AKBAR & ASSOCIATES<span style="color: azure;">.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="expertise.html">Expertise</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <div class="breadcrumbs d-flex align-items-center" style="background-image: url('assets/img/HOME1.jpeg');" alt="Background image of Akbar & Associates Contact Page">
+    <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+      <h2>Company Profile</h2>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li>Profile</li>
+      </ol>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Services Offered</h2>
+        </div>
+        
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body text-center p-4">
+                <div class="service-icon"><i class="fas fa-project-diagram"></i></div>
+                <h4 class="card-title">Comprehensive Project Planning</h4>
+                <p class="card-text">Start-to-end project planning, ensuring smooth execution.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body text-center p-4">
+                <div class="service-icon"><i class="fas fa-drafting-compass"></i></div>
+                <h4 class="card-title">Architectural & Structural Design</h4>
+                <p class="card-text">Tailored designs adhering to local and international standards.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body text-center p-4">
+                <div class="service-icon"><i class="fas fa-balance-scale"></i></div>
+                <h4 class="card-title">Economy & Safety</h4>
+                <p class="card-text">Guaranteed cost-efficient designs without compromising safety.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body text-center p-4">
+                <div class="service-icon"><i class="fas fa-calculator"></i></div>
+                <h4 class="card-title">Cost Estimation</h4>
+                <p class="card-text">Accurate and detailed estimations for informed decision-making.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body text-center p-4">
+                <div class="service-icon"><i class="fas fa-file-contract"></i></div>
+                <h4 class="card-title">Tendering & Contract Management</h4>
+                <p class="card-text">Preparation of tenders, contractor selection & documentation guidance.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4">
+            <div class="card service-card">
+              <div class="card-body text-center p-4">
+                <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+                <h4 class="card-title">Bill Checking & Top Supervision</h4>
+                <p class="card-text">Detailed bill checking & top supervision assisting quality and compliance.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4 mx-auto">
+            <div class="card service-card">
+              <div class="card-body text-center p-4">
+                <div class="service-icon"><i class="fas fa-hard-hat"></i></div>
+                <h4 class="card-title">Retrofitting & Stability Assessments</h4>
+                <p class="card-text">Upgrades and safety checks for existing structures.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Notable Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Notable Projects</h2>
+        </div>
+        
+        <div class="table-responsive">
+          <table class="table table-striped project-table">
+            <thead>
+              <tr>
+                <th>Project Name</th>
+                <th>Type</th>
+                <th>Location</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Crescent Greenwood Limited</td><td>Industrial</td><td>near Pindi Bhattian, Distt. Hafizabad</td></tr>
+              <tr><td>Data Darbar Mausoleum & Mosque*</td><td>Historical</td><td>Lahore</td></tr>
+              <tr><td>Fatima Fertilizer Company Limited</td><td>Industrial</td><td>Sadiqabad</td></tr>
+              <tr><td>Aisha Steel Mills Limited</td><td>Industrial</td><td>BinQasim, Karachi</td></tr>
+              <tr><td>Dewan Salman Fibres Limited</td><td>Industrial</td><td>Hattar. N.W.F.P.</td></tr>
+              <tr><td>Dewan Sugar Mills Limited</td><td>Industrial</td><td>Distt. Sujawal, Sindh</td></tr>
+              <tr><td>Dewan Farooque Medical Complex*</td><td>Medical</td><td>for Sindh Institute of Urology & Transplantation, Karachi</td></tr>
+              <tr><td>Hanifa Suleman Dawood Oncology Centre*</td><td>Hospital</td><td>for Sindh Institute of Urology & Transplantation, Karachi</td></tr>
+              <tr><td>Ghulam Ishaque Khan Institute of Engineering Sciences & Technology*</td><td>Educational</td><td>Topi, N.W.F.P.</td></tr>
+              <tr><td>Kohinoor Edible Oils Limited</td><td>Industrial</td><td>Bhawalpur Khanewal Road</td></tr>
+              <tr><td>Olympia Chemicals SodaAsh Plant</td><td>Industrial</td><td>Warshah</td></tr>
+              <tr><td>Agricultural Development Bank Headquarters*</td><td>Commercial</td><td>Islamabad</td></tr>
+              <tr><td>New Sindh Assembly Building*</td><td>Historical</td><td>Karachi</td></tr>
+              <tr><td>National Assembly Building*</td><td>Historical</td><td>Islamabad</td></tr>
+            </tbody>
+          </table>
+          <p class="text-muted"><small>*Structure Design Only</small></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= CURRENT PROJECTS SECTION ======= -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Current Projects</h2>
+        </div>
+
+        <div class="row">
+
+          <!-- Confectionary -->
+          <div class="col-md-6 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Confectionary</h5>
+                <ul class="list-unstyled">
+                  <li><strong>FAV Group</strong> - Multan</li>
+                  <li><strong>Volka Group</strong> - Multan & Lahore</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Chemical Plants -->
+          <div class="col-md-6 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Chemical Plants</h5>
+                <ul class="list-unstyled">
+                  <li><strong>GH2</strong> - Gharo</li>
+                  <li><strong>Pinnacle Fibres</strong> - Nooriabad</li>
+                  <li><strong>Shafi Gluco Chemicals</strong> - Hub Chawki, Balochistan</li>
+                  <li><strong>Olympia Chemical Limited (Ext.)</strong> - Warcha Khushab</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dairy -->
+          <div class="col-md-6 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Dairy</h5>
+                <ul class="list-unstyled">
+                  <li><strong>AAA Dairies</strong> - Karachi</li>
+                  <li><strong>Everfresh Farms Ltd.</strong> - Bhera</li>
+                  <li><strong>Pakistan Dairies</strong> - Karachi</li>
+                  <li><strong>Umer Farms Limited (Ext.)</strong> - Ferozwatwan</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Energy Generation -->
+          <div class="col-md-6 mb-4">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Energy Generation</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Ahmadfine Group Solar</strong></li>
+                  <li><strong>Din Group Solar</strong> - Raiwind</li>
+                  <li><strong>Fazal Cloth Group Solar</strong></li>
+                  <li><strong>Gadoon Solar</strong> - Kathore</li>
+                  <li><strong>Premium Solar</strong> - Nooriabad</li>
+                  <li><strong>Umer / Bhanero Group Solar</strong> - Punjab & Sindh</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Fertilizer Plants -->
+          <div class="col-md-6 mb-4 project-section-hidden">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Fertilizer Plants</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Agven Chemical</strong> - Gawadar</li>
+                  <li><strong>Fertichem</strong> - Bin Qasim</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foam Industry -->
+          <div class="col-md-6 mb-4 project-section-hidden">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Foam Industry</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Diamond Group of Industries</strong> - Bin Qasim</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Rice Processing -->
+          <div class="col-md-6 mb-4 project-section-hidden">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Rice Processing</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Conwill Rice Mill</strong> - Tando Allah Yar, Sind</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sugar Industry -->
+          <div class="col-md-6 mb-4 project-section-hidden">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Sugar Industry</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Indus Sugar Mills (BMR)</strong> - Dera Ghazi Khan</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Textile Industry -->
+          <div class="col-md-6 mb-4 project-section-hidden">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Textile Industry</h5>
+                <ul class="list-unstyled">
+                  <li><strong>A.G.I. Denim</strong> - Karachi</li>
+                  <li><strong>Ahmed Fine Textile Mills Group</strong> - Multan</li>
+                  <li><strong>Al-Razzak Fibres</strong> - Nooriabad</li>
+                  <li><strong>Gadoon Textile Mill Unit 1 - Renovation</strong> - Kathore</li>
+                  <li><strong>Lucky Textile Mills - Units 6 & 1 Ext.</strong> - Kathore / Karachi</li>
+                  <li><strong>Premium Textile Units 2 & 4</strong> - Nooriabad</li>
+                  <li><strong>Ahmedfine Textile Mills Group</strong> - Punjab</li>
+                  <li><strong>Amna Industries</strong> - Karachi</li>
+                  <li><strong>Bhanero / Umer Group</strong> - Punjab & Sindh</li>
+                  <li><strong>Din Group</strong> - Raiwind</li>
+                  <li><strong>Fazal Rehman Group</strong> - Multan</li>
+                  <li><strong>Gadoon & Lucky Textile Mills Group</strong></li>
+                  <li><strong>Ihsan Group</strong> - Raiwind</li>
+                  <li><strong>Indus Dyeing</strong> - Karachi</li>
+                  <li><strong>Kohinoor Mills Ltd.</strong> - Raiwind</li>
+                  <li><strong>Metier Group</strong> - Karachi</li>
+                  <li><strong>Mount Fuji Textile Ltd.</strong> - Karachi</li>
+                  <li><strong>Nishat Chunian Limited</strong> - Chunian</li>
+                  <li><strong>Rizwan Enterprises</strong> - Nooriabad</li>
+                  <li><strong>Shafi Texcel Group</strong> - Raiwind</li>
+                  <li><strong>Union Apparel Group</strong> - Nooriabad</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tire Manufacturing -->
+          <div class="col-md-6 mb-4 project-section-hidden">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Tire Manufacturing</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Armstrong - Zee</strong> - Gharo</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Warehouses & Misc. Projects -->
+          <div class="col-md-6 mb-4 project-section-hidden">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Warehouses & Misc. Projects</h5>
+                <ul class="list-unstyled">
+                  <li><strong>AFTML Sandpaper Unit</strong> - Multan</li>
+                  <li><strong>Dashi Foods</strong> - Hub Chowki</li>
+                  <li><strong>Shafi Gluco</strong> - Hub</li>
+                  <li><strong>Tapal Tea</strong> - Karachi & Sukkur</li>
+                  <li><strong>Vision Food Packaging</strong> - Sunder Estate, Lahore</li>
+                  <li><strong>Union Denim</strong> - Karachi</li>
+                  <li><strong>Universal Brushware</strong> - Karachi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Waste Water Treatment Plants -->
+          <div class="col-md-6 mb-4 project-section-hidden">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title" style="color: #f5c43d;">Waste Water Treatment Plants</h5>
+                <ul class="list-unstyled">
+                  <li><strong>Din Textile Mills Ltd. Units 1 & 2</strong> - Bhai Pheru</li>
+                  <li><strong>Nishat Chunian</strong> - Chunian</li>
+                  <li><strong>Two-Star (Kamalia Sugar)</strong> - Kamalia</li>
+                  <li><strong>Union Fabrics Ltd. Unit 5</strong> - Karachi</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- End row -->
+
+        <!-- Load More Button -->
+        <div class="text-center mt-4">
+          <button id="loadMoreBtn" class="btn load-more-btn">
+            <i class="fas fa-plus-circle me-2"></i>Load More Projects (8 more available)
+          </button>
+        </div>
+
+        <!-- Projects Redirect Button -->
+        <div class="projects-redirect-container">
+          <a href="projects.html" class="projects-redirect-btn">
+            <i class="fas fa-briefcase"></i>View Projects Gallery
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ======= END CURRENT PROJECTS ======= -->
+
+
+    <!-- Completed Projects 1976-2024 Section -->
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Completed Projects (1976-2024)</h2>
+      <p class="lead">Nearly five decades of engineering excellence across diverse industries</p>
+    </div>
+
+    <!-- Administrative & Commercial -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Administrative & Commercial Buildings</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Agricultural Development Bank of Pakistan</td><td>Islamabad</td></tr>
+            <tr><td>City Towers 11 Storeyed Commercial Building at Main Boulevard</td><td>Lahore</td></tr>
+            <tr><td>Crescent Bahuman Ltd. Office</td><td>—</td></tr>
+            <tr><td>Dawood Enterprises Commercial Building</td><td>Lahore</td></tr>
+            <tr><td>Dewan Mushtaque Group, Head Office</td><td>Islamabad</td></tr>
+            <tr><td>Dental Clinic for Dr. M. Altamash & Associates</td><td>Karachi</td></tr>
+            <tr><td>Dr. Altamash Dental Clinic</td><td>Karachi</td></tr>
+            <tr><td>Eastern Federal Union Insurance Building</td><td>Rawalpindi</td></tr>
+            <tr><td>Embassy & Consulate Building of Egypt</td><td>Islamabad</td></tr>
+            <tr><td>Furniture Plaza</td><td>Karachi</td></tr>
+            <tr><td>Gul Ahmed Energy Admin Block at Korangi</td><td>Karachi</td></tr>
+            <tr><td>Imperial Plaza for Mughal's Imperial</td><td>Lahore</td></tr>
+            <tr><td>Imperial House – Mughal Pakistan</td><td>Lahore</td></tr>
+            <tr><td>Lahore Plaza</td><td>Lahore</td></tr>
+            <tr><td>Pakistan Telecommunication Headquarters Building</td><td>Islamabad</td></tr>
+            <tr><td>Pakistan Space & Upper Atmosphere Research Commission (SUPARCO)</td><td>Islamabad</td></tr>
+            <tr><td>Umer Chambers, Head Office for Bhanero Group</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Acrylic & Polyester Fibre Plants -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Acrylic & Polyester Fibre Plants</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Dewan Salman Fibre Acrylic Fibre Plant 25000 T/Y at Distt. Haripur</td><td>Haripur</td></tr>
+            <tr><td>Dewan Salman Fibre Unit-5 & 6</td><td>Hattar</td></tr>
+            <tr><td>Dewan Salman Fibres Limited, Unit 1 & 2 (300 TPD)</td><td>Hattar</td></tr>
+            <tr><td>Dhan Fibres at Distt. Hattar</td><td>Hattar</td></tr>
+            <tr><td>Dhan Fibre Limited (260 TPD)</td><td>N.W.F.P.</td></tr>
+            <tr><td>Fayaz Filament (Pvt.) Limited</td><td>Hub</td></tr>
+            <tr><td>Kohinoor Fibres Limited</td><td>Raiwind</td></tr>
+            <tr><td>Progressive Fibres Limited</td><td>Hub</td></tr>
+            <tr><td>Pinnacle Fibres (Pvt.) Limited</td><td>Nooriabad</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bridges -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Bridges</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Akbari Bridge 200' Long on Kotli Gulpur Road</td><td>Azad Kashmir</td></tr>
+            <tr><td>Abbaspur Nallah Bridge, 6 Spans, each 100', near Poonch</td><td>Azad Kashmir</td></tr>
+            <tr><td>Channari Bridge, 250' Long</td><td>Azad Kashmir</td></tr>
+            <tr><td>Comser Nallah Bridge, 125' Long</td><td>Azad Kashmir</td></tr>
+            <tr><td>Chattar Domail, 650' Long at Muzaffarabad</td><td>Azad Kashmir</td></tr>
+            <tr><td>Jhelum Bridge, 900' Long at Nilluchi</td><td>Azad Kashmir</td></tr>
+            <tr><td>Khurmana Nallah Bridge, 4 Spans, each 100'</td><td>Kurram Agency</td></tr>
+            <tr><td>Nishtar Basti Bridge over Lyari River, 5 Spans, each 80'</td><td>Karachi</td></tr>
+            <tr><td>Nallah Majhan Bridge, 6 spans, each 40' near Kotli</td><td>Azad Kashmir</td></tr>
+            <tr><td>Neelum River Bridge, 300' Long, Muzaffarabad</td><td>Azad Kashmir</td></tr>
+            <tr><td>Pateeka Bridge, 300' Long, Muzaffarabad</td><td>Azad Kashmir</td></tr>
+            <tr><td>Rehman Bridge</td><td>Azad Kashmir</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Boiler House -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Boiler House</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Kohinoor Mills Limited at Raiwind</td><td>Raiwind</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bottling & Crown Caps Units -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Bottling & Crown Caps Units</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Fazal Bottlers Limited</td><td>—</td></tr>
+            <tr><td>Imran Crown Cork</td><td>Karachi</td></tr>
+            <tr><td>Pakistan Synthetics Ltd. at Port Qasim</td><td>Karachi</td></tr>
+            <tr><td>R.C. Cola Factory</td><td>Multan</td></tr>
+            <tr><td>Waseem Beverages Ltd.</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Car Plants -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Car Plants</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Dewan Farooque Motors (Kia Pride Unit) at Budha Talpur</td><td>Sajawal</td></tr>
+            <tr><td>Master Motor Corporation (Light Truck Assembly Plant)</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Cement Plant -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Cement Plant</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Chakwal Cement Co. Limited. 5500 T.P.D.</td><td>Kroli, Distt. Chakwal</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Ceramics Plant -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Ceramics Plant</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Karam Ceramics Limited</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Chemical Plants -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Chemical Plants</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Agven (Pvt.) Limited</td><td>Gawadar</td></tr>
+            <tr><td>Crescent Board Formalin & U.F.Glue Plant</td><td>Lahore</td></tr>
+            <tr><td>Layaan Chemical Industries</td><td>Kallar Kahar</td></tr>
+            <tr><td>NTP Galantine (Pvt) Ltd.</td><td>Muridke</td></tr>
+            <tr><td>Pacific Chemicals Glue Plant</td><td>Bangladesh</td></tr>
+            <tr><td>Pacific Exim (Pvt.) Ltd., (Physical Refinery) oil</td><td>Port Qasim</td></tr>
+            <tr><td>Pak Grease Mfg. Company Limited, (Extension)</td><td>Karachi</td></tr>
+            <tr><td>Dewan Salman Acrylic Fibre Plant</td><td>Haripur</td></tr>
+            <tr><td>Dewan Salman Fibres Limited, Polymer Unit 1 & 2 (300 TPD)</td><td>Hattar</td></tr>
+            <tr><td>Dhan Fibre Limited. Polyester Fibre Plant (260 TPD)</td><td>Hattar</td></tr>
+            <tr><td>Shafi Gluco Chemicals (Pvt.) Ltd.</td><td>Hub Chawki</td></tr>
+            <tr><td>Suncrop Group</td><td>Rahimyar Khan</td></tr>
+            <tr><td>Super Chemicals Limited</td><td>Karachi</td></tr>
+            <tr><td>Tufail Chemicals Limited</td><td>Lahore</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Dairy Plant -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Dairy Plant</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Dairy Chemical</td><td>Multan</td></tr>
+            <tr><td>J.K. Dairies (JDW Group)</td><td>Rahim Yar Khan</td></tr>
+            <tr><td>Mariam Dairy (Milk Farm)</td><td>Ethiopia</td></tr>
+            <tr><td>Umer Farms</td><td>Ferozewatwan</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Detergent Plant -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Detergent Plant</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Nadeem Traders</td><td>Multan</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Distillery -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Distillery</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Dewan Distillery Ltd.</td><td>—</td></tr>
+            <tr><td>Shah Murad Sugar Distillery</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Edible Oil & Ghee Mills -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Edible Oil & Ghee Mills</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Habib Oil Mills (Pvt.) Ltd.</td><td>—</td></tr>
+            <tr><td>Ittefaque Agro Industries (Pvt.) Ltd., (Extraction unit)</td><td>Port Qasim</td></tr>
+            <tr><td>Karachi Grains (Pvt) Ltd</td><td>Karachi</td></tr>
+            <tr><td>Karachi Grains (Pvt) Ltd. Extension</td><td>Karachi</td></tr>
+            <tr><td>Kashmir Edible Oils Limited</td><td>Faisalabad</td></tr>
+            <tr><td>Kausar Ghee Mills (Physical Refinery)</td><td>Port Qasim</td></tr>
+            <tr><td>Kausar Ghee Mills</td><td>Port Qasim</td></tr>
+            <tr><td>Kohinoor Edible Oils Limited</td><td>Bhawalpur Rd.</td></tr>
+            <tr><td>M.M. Commodities (Extraction unit)</td><td>Port Qasim</td></tr>
+            <tr><td>M.M. Ghee Mills Limited</td><td>Port Qasim</td></tr>
+            <tr><td>Oil Man</td><td>Vehari</td></tr>
+            <tr><td>Olympia Oils (Pvt) Ltd</td><td>Faisalabad Rd</td></tr>
+            <tr><td>S.S. Oil Mills Limited</td><td>Lahore</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Educational Institutions -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Educational Institutions</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Apwa Womens Complex</td><td>Karachi</td></tr>
+            <tr><td>Crescent Girls High School Phase 3</td><td>—</td></tr>
+            <tr><td>Divisional Public School</td><td>Sahiwal</td></tr>
+            <tr><td>Dr. A.Q. Khan Institute of Bio-Tech. & Genetic Engineering</td><td>Karachi*</td></tr>
+            <tr><td>Ghulam Ishaq Khan, Institute of Engg. Sciences and Technology</td><td>Topi, N.W.F.P.</td></tr>
+            <tr><td>Govt. Polytechnic Institute for Woman</td><td>Islamabad*</td></tr>
+            <tr><td>Institute of Business Administration (IBA)</td><td>Sukkur*</td></tr>
+            <tr><td>Library Building for Quaid-e-Awam University of Eng. & Tech.</td><td>Nawabshah*</td></tr>
+            <tr><td>Mehran University College of Engineering & Technology</td><td>Nawabshah*</td></tr>
+            <tr><td>Narc Mart. A.V. Communication & Training Institute</td><td>Islamabad</td></tr>
+            <tr><td>National Institute of Leather Technology</td><td>Karachi</td></tr>
+            <tr><td>Overseas Pakistan Foundation Girls High School</td><td>Islamabad</td></tr>
+            <tr><td>Sally Textile School</td><td>Jauharabd</td></tr>
+            <tr><td>School Building for Crescent Bahuman Ltd.</td><td>Pindi Bhattian</td></tr>
+            <tr><td>Sir Syed Memorial Complex, Phase 1</td><td>Islamabad*</td></tr>
+            <tr><td>Sports Gymnasium, Mehran University of Engineering & Technology</td><td>Jamshoro</td></tr>
+            <tr><td>Superior College</td><td>Okara & Rahim Yar Khan</td></tr>
+            <tr><td>Superior University</td><td>Raiwind</td></tr>
+          </tbody>
+        </table>
+        <p class="text-muted"><small>*Structure Design Only</small></p>
+      </div>
+    </div>
+
+    <!-- Ethanol Storage & Tank Cleaning Facility -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Ethanol Storage & Tank Cleaning Facility</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Marine International Liquid Terminal</td><td>Northern By Pass</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Engineering Industry -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Engineering Industry</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Duracrete (Pvt) Ltd</td><td>Kathore</td></tr>
+            <tr><td>IIW Industrial Engineers & Contractors</td><td>Port Qasim</td></tr>
+            <tr><td>Icrete</td><td>Port Qasim</td></tr>
+            <tr><td>Magnacrete (Pvt.) Limited</td><td>Karachi</td></tr>
+            <tr><td>Magnacrete (Pvt.) Limited (New block unit)</td><td>Super highway</td></tr>
+            <tr><td>Nazir Concrete (Pvt.)</td><td>Super Highway</td></tr>
+            <tr><td>Procon Engineering Extension</td><td>Port Qasim</td></tr>
+            <tr><td>SUPARCO Ground Receiving Station (GRS)</td><td>Islamabad</td></tr>
+            <tr><td>SUPARCO Unit 200 Section 290</td><td>Karachi</td></tr>
+            <tr><td>Zultec (Pvt.) Ltd</td><td>Sunder Estate</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Fertilizer Plants -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Fertilizer Plants</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Agven (Pvt.) Limited</td><td>Gawadar</td></tr>
+            <tr><td>Amonia Tank Foundation</td><td>Multan</td></tr>
+            <tr><td>Barkat Fertilizer (Pvt.) Limited</td><td>Karachi</td></tr>
+            <tr><td>Fatima Fertilizer</td><td>Sadiqabad</td></tr>
+            <tr><td>Pak Arab Fertilizer (Pvt) Ltd</td><td>Multan</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Flour Mills -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Flour Mills</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Al-Farooq Roller Flour Mills Limited</td><td>Khairpur</td></tr>
+            <tr><td>Dua Flour Mill</td><td>Port Qasim</td></tr>
+            <tr><td>Maskey & Femtee</td><td>Port Qasim</td></tr>
+            <tr><td>Shams Flour Mills</td><td>—</td></tr>
+            <tr><td>Sukkur Grains (Pvt.) Limited</td><td>Port Qasim</td></tr>
+            <tr><td>Zainab Roller Flour Mills Limited</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Foam Industry -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Foam Industry</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Diamond Enterprises (Pvt.) Limited</td><td>Port Qasim</td></tr>
+            <tr><td>Master Molty Foam</td><td>Port Qasim</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Food & Beverages -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Food & Beverages</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Asian Food Industries</td><td>Raiwind</td></tr>
+            <tr><td>Damco Pakistan Cold Storage</td><td>Sahiwal</td></tr>
+            <tr><td>Gourmet Beverage Plant</td><td>Sundar</td></tr>
+            <tr><td>Hilal Foods</td><td>Karachi</td></tr>
+            <tr><td>Hilal Nutritation (Pvt.) Limited</td><td>Gharo</td></tr>
+            <tr><td>Hunza Orchards (Pvt.) Limited</td><td>Hunza</td></tr>
+            <tr><td>Irfan Foods (Pvt) Ltd</td><td>Ferozepur Road</td></tr>
+            <tr><td>Neatfoods (Pvt.) Limited</td><td>Ferozepur Road</td></tr>
+            <tr><td>Q&Q Food Industries (Pvt.) Ltd</td><td>Port Qasim</td></tr>
+            <tr><td>R.C. Cola Factory Khanewal Road</td><td>Multan</td></tr>
+            <tr><td>Rafhan Best Foods Limited</td><td>Lahore</td></tr>
+            <tr><td>Sukkur Beverage (Pvt.) Limited</td><td>Sukkur</td></tr>
+            <tr><td>Wasim Beverages Limited</td><td>—</td></tr>
+            <tr><td>Yasir Food Industries</td><td>Ferozepur Road</td></tr>
+            <tr><td>Zuchini Industries (Pvt) Ltd</td><td>Raiwind</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Gaming Area -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Gaming Area</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Vibractive at HBK Mall</td><td>Peshawar</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Ginning Unit -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Ginning Unit</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Fazal Textile Ginning Factory</td><td>Super Highway</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Glass Factory -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Glass Factory</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Nippon Safety Glass Pakistan (Pvt) Ltd</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Hospitals -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Hospitals (Structure Design Only)</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Bone Marrow Transplant Centre, A.F.I.P</td><td>Rawalpindi</td></tr>
+            <tr><td>Chiniot General Hospital</td><td>Karachi</td></tr>
+            <tr><td>Kuttiyana Memon Hospital, Karachi</td><td>Karachi</td></tr>
+            <tr><td>S.I.U.T., Dewan Farooq Medical Complex</td><td>Karachi</td></tr>
+            <tr><td>S.I.U.T., Hanifa Suleman Oncology Centre</td><td>Karachi</td></tr>
+            <tr><td>S.I.U.T. New Hospital</td><td>Sukkur By-Pass</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Irrigation Structure -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Irrigation Structure</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Underpass Jamrao Canal, Left Bank, Outfall Drain</td><td>Sindh</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- International Projects -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">International Projects</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Al-Habasha Sugar Mills PLC (8000 TPD)</td><td>Arjo, Ethiopia</td></tr>
+            <tr><td>Industrial Hand Protection CEPZ</td><td>Bangladesh</td></tr>
+            <tr><td>Manama Textile Mills</td><td>Bahrain</td></tr>
+            <tr><td>Mariam Dairy (Milk Farm)</td><td>Ethiopia</td></tr>
+            <tr><td>Padma Textile</td><td>Bangladesh</td></tr>
+            <tr><td>Safari Parking</td><td>Afghanistan</td></tr>
+            <tr><td>Shamsuddin Spinning Mills</td><td>Bangladesh</td></tr>
+            <tr><td>Square Textiles Ltd.</td><td>Bangladesh</td></tr>
+            <tr><td>Utah Stitching & Garments</td><td>Bangladesh</td></tr>
+            <tr><td>Utah Stitching Phase-2</td><td>Bangladesh</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Jute Mills -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Jute Mills</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Alipur Jute Mills Limited</td><td>Sargodha</td></tr>
+            <tr><td>Crescent Jute Mills Limited</td><td>—</td></tr>
+            <tr><td>Habib Jute Mills Limited</td><td>Jauharabad</td></tr>
+            <tr><td>Indus Jute Mills Limited</td><td>Dhabeji</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Knitting Mills -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Knitting Mills</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>GTN Fabrics Limited</td><td>Karachi</td></tr>
+            <tr><td>Gulknit (Pvt.) Limited</td><td>Karachi</td></tr>
+            <tr><td>International Fabrics Limited</td><td>Karachi</td></tr>
+            <tr><td>S. Fazal Elahi & Sons Mop Making & Knitting</td><td>—</td></tr>
+            <tr><td>Weavers Pakistan Limited</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Leather Industry -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Leather Industry</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Abdul Hafeez Shafi Leather</td><td>Ferozepur Road</td></tr>
+            <tr><td>Akram Tanneries</td><td>Raiwind</td></tr>
+            <tr><td>Aslam Sons (Pvt) Limited</td><td>Kana Kacha</td></tr>
+            <tr><td>East Pakistan Chrome Tannery (Extension)</td><td>East Pakistan</td></tr>
+            <tr><td>Hub Leather Industries</td><td>Lahore</td></tr>
+            <tr><td>Hub Leather Products</td><td>Karachi</td></tr>
+            <tr><td>Hub Leather Products Ltd. Unit-2</td><td>Lahore</td></tr>
+            <tr><td>M. Shafi Tanneries Renovation</td><td>Ferozewatwan</td></tr>
+            <tr><td>M. Shafi Tanneries Renovation</td><td>Karachi</td></tr>
+            <tr><td>Muhammad Ismail Muhammad Aslam Limited</td><td>Karachi</td></tr>
+            <tr><td>S.M. Saeed Goreja & Sons</td><td>Karachi</td></tr>
+            <tr><td>Universal Leather Pakistan</td><td>Karachi</td></tr>
+            <tr><td>Zahoor Sancho (Pvt) Limited</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- LPG Plant -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">LPG Plant</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Dewan Petroleum Salsabil Gas Plant</td><td>DG Khan</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Marble Industry -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Marble Industry</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Ahangar (Pvt) Ltd</td><td>Karachi</td></tr>
+            <tr><td>Marmonyx (Pvt) Ltd</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Meat Processing Unit -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Meat Processing Unit</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Al-Shaheer Corporation (Pvt.) Limited</td><td>Lahore</td></tr>
+            <tr><td>M. Artal Poultry</td><td>Lahore</td></tr>
+            <tr><td>Neat Foods Private Limited</td><td>Lahore</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Miscellaneous Projects -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Miscellaneous Projects</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Automobile Corporation of Pakistan</td><td>Port Qasim</td></tr>
+            <tr><td>Ajaz Enterprises Ltd.</td><td>Lahore</td></tr>
+            <tr><td>Arbour Group</td><td>Port Qasim</td></tr>
+            <tr><td>Bahria Town (Pvt.) Limited</td><td>Super highway</td></tr>
+            <tr><td>Daily Chemicals (Pvt.) Limited</td><td>Multan</td></tr>
+            <tr><td>D-Mart</td><td>Raiwind</td></tr>
+            <tr><td>Hamza Flexible Printing & Packages (Pvt.) Limited</td><td>Multan</td></tr>
+            <tr><td>Ice Factory</td><td>Karachi</td></tr>
+            <tr><td>Lucky Textile Mills unit-03</td><td>Karachi</td></tr>
+            <tr><td>Monnoo Industries Limited</td><td>Lahore</td></tr>
+            <tr><td>Sungen (Pvt.) Limited</td><td>Port Qasim</td></tr>
+            <tr><td>Union Complex</td><td>Lahore</td></tr>
+            <tr><td>Unity Wilmar Agro (Pvt.) Limited</td><td>Port Qasim</td></tr>
+            <tr><td>Wartsila</td><td>Lahore</td></tr>
+            <tr><td>Zafar Enterprises</td><td>Gharo</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Monument -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Monument</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Quaid-e-Azam Memorial</td><td>Muzaffarabad</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Oil Field -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Oil Field</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>425,000 Gallon Open Water Reservoir for UTP</td><td>Badin</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Paper Factory -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Paper Factory</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Beater & Breaker Troughs for Security Papers Limited</td><td>Karachi</td></tr>
+            <tr><td>Rawal Paper & Co.</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Pharmaceutical Plant -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Pharmaceutical Plant</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Pharmagen Beximco Limited</td><td>Lahore</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Polypropylene Bags Unit -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Polypropylene Bags Unit</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>S.G. Polysack Industries</td><td>Muzaffargarh</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Poultry -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Poultry</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Olympia Poultry Farms</td><td>Sheikhupura</td></tr>
+            <tr><td>Punjab Feeds (Olympia Group) Extension</td><td>Sheikhupura</td></tr>
+            <tr><td>Umer Farms</td><td>Nooriabad</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Power Houses -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Power Houses</h4>
+      <div class="card project-card">
+        <div class="card-body text-center">
+          <h5 style="color: #f5c43d;">Power Generation Units</h5>
+          <p class="lead">Completed more than <strong>100 Power Generation Units</strong></p>
+          <p>Capacity range: <strong>3MW – 200MW</strong> for different industries and individual units</p>
+          <p class="text-muted small">(Detailed list of Power Houses can be provided upon request)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Religious Buildings -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Religious Buildings</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Data Darbar Mausoleum Phase-II, Lahore*</td><td>Lahore*</td></tr>
+            <tr><td>Data Darbar Mosque & Mausoleum, Phase I & II</td><td>Lahore</td></tr>
+            <tr><td>Ijtemah Gah (Masjid-e-Yousuf)</td><td>Karachi</td></tr>
+            <tr><td>Jamia Masjid Mustafa</td><td>Hala</td></tr>
+            <tr><td>Jamia Masjid Muhammad Bin Qasim</td><td>Port Qasim</td></tr>
+            <tr><td>Masjid at Gadoon Textile</td><td>Super Highway</td></tr>
+            <tr><td>Masjid-e-Dewan Umer Farooq</td><td>Islamabad</td></tr>
+            <tr><td>Shafi (Pvt) Ltd. Mosque</td><td>Sheikhupura Road</td></tr>
+            <tr><td>Sundar Darbar Mosque</td><td>Multan Road</td></tr>
+            <tr><td>Zubeda Mosque for Patel Foundation</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+        <p class="text-muted"><small>*Structure Design Only</small></p>
+      </div>
+    </div>
+
+    <!-- Rice Mills -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Rice Mills</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Garibsons (Pvt) Ltd. Rice Processing Mills at Port Qasim, Karachi</td><td>Gharo</td></tr>
+            <tr><td>Garibsons (Pvt) Ltd. Rice Processing Mills</td><td>Port Qasim</td></tr>
+            <tr><td>Irfan Noman Bernas</td><td>Port Qasim</td></tr>
+            <tr><td>Irfan Noman Brothers</td><td>Port Qasim</td></tr>
+            <tr><td>Irfan Noman Builders (Pvt) Ltd. Rice Mills</td><td>Port Qasim</td></tr>
+            <tr><td>Karachi Grains (Pvt) Ltd. Rice Processing Mills</td><td>Port Qasim</td></tr>
+            <tr><td>Meskay & Femtee Trading Co.</td><td>Port Qasim</td></tr>
+            <tr><td>VMS Trading Rice Mills</td><td>Port Qasim</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- R.O. Plant -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">R.O. Plant</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>R.O. Plant and U.G. tanks at PAF Base Shahbaz</td><td>Jacobabad</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Road Work -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Road Work</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Fatima Fertilizer</td><td>Sadiqabad</td></tr>
+            <tr><td>Gadoon/Lucky/Younus Textile Main RCC Road, Industrial Complex</td><td>Super Highway</td></tr>
+            <tr><td>Silk Gardens Housing Main Access road</td><td>Surjani, Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Seed Planting & Germination -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Seed Planting & Germination</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Sugarcane Seed planting & Germination</td><td>Punjab & Sindh</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Shoe Industry -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Shoe Industry</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Firhaj Footwear Unit-2</td><td>Lahore</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Small Industries -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Small Industries</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Brother's Trading Industrial Corporation</td><td>—</td></tr>
+            <tr><td>Cottage Industry, Nazimabad</td><td>Karachi</td></tr>
+            <tr><td>Emeco Industries</td><td>Hub</td></tr>
+            <tr><td>Ghamgol Industries (Pvt.) Limited</td><td>S.I.T.E., Karachi</td></tr>
+            <tr><td>J.P. Exports Limited</td><td>—</td></tr>
+            <tr><td>Karachi Bulk Storage Terminal</td><td>—</td></tr>
+            <tr><td>Mehran Industries Limited</td><td>S.I.T.E., Kotri</td></tr>
+            <tr><td>Muhammad Ebrahim & Company Limited</td><td>—</td></tr>
+            <tr><td>Naheed Noor Industries</td><td>—</td></tr>
+            <tr><td>Pakistan China Battery Company Limited</td><td>—</td></tr>
+            <tr><td>Parvez Industrial Limited</td><td>—</td></tr>
+            <tr><td>Rawal Paper & Company</td><td>—</td></tr>
+            <tr><td>Zahoor Industries</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Soda Ash Chemical -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Soda Ash Chemical</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Olympia Chemicals Pvt. Ltd.</td><td>Jauharabad</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Solar Power Plant -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Solar Power Plant</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Gharo Solar (Pvt.) Limited</td><td>Gharo</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Steel Cold Rolling Mills Complex -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Steel Cold Rolling Mills Complex</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Aisha Steel Mills Ltd</td><td>Port Qasim</td></tr>
+            <tr><td>Abbas Steel Group</td><td>Port Qasim</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Sugar Mills -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Sugar Mills</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Adam Sugar Mills</td><td>Chistian</td></tr>
+            <tr><td>AKT Sugar Mills (BMR & WWTP)</td><td>Ubaro</td></tr>
+            <tr><td>Al-Habasha Sugar Mills PLC (8000 TPD)</td><td>Ethiopia</td></tr>
+            <tr><td>Chashma Sugar Mills Limited</td><td>D.I. Khan</td></tr>
+            <tr><td>Chaudhry Sugar Mills Limited</td><td>Rahim Yar Khan</td></tr>
+            <tr><td>Daharki Sugar Mills Ltd.</td><td>Kamu Shaheed</td></tr>
+            <tr><td>Daharki Sugar Mills (Pvt.) Ltd. at Kot Sabzal</td><td>Sindh/Punjab Border</td></tr>
+            <tr><td>Daharki Sugar Mills Limited (Extension)</td><td>Kamoo Shaheed</td></tr>
+            <tr><td>Dewan Sugar Mills Limited</td><td>Budho Talpur, Sindh</td></tr>
+            <tr><td>Fatima Sugar Mills (Extensions)</td><td>Kot Addu</td></tr>
+            <tr><td>Fatima Sugar Mills Limited</td><td>Sanawan, Kot Addu</td></tr>
+            <tr><td>Ghotki Sugar Mills (Pvt) Ltd. 2000 TPD Extension</td><td>Ghotki</td></tr>
+            <tr><td>Ghotki Sugar Mills (Pvt) Ltd. (6000 TPD)</td><td>Ghotki</td></tr>
+            <tr><td>Ghotki Sugar Mills Limited BMR</td><td>Ghotki</td></tr>
+            <tr><td>JDW Sugar Mills (9000 TPD) New Extension</td><td>Rahimyar Khan</td></tr>
+            <tr><td>JDW Sugar Mills Limited BMR</td><td>Rahim Yar Khan</td></tr>
+            <tr><td>JDW Sugar Mills Ltd. 12000 TPD Extension</td><td>Rahimyar Khan</td></tr>
+            <tr><td>JK Sugar Mills Limited BMR</td><td>Katcha Khu</td></tr>
+            <tr><td>Kamalia Sugar Mills Limited</td><td>Kamalia</td></tr>
+            <tr><td>Layyah Sugar Mills (Extension)</td><td>Layyah</td></tr>
+            <tr><td>Ranipur Sugar Mills Misc. Works</td><td>Ranipur</td></tr>
+            <tr><td>United Sugar Mills Limited (Extension)</td><td>Sadiqabad</td></tr>
+            <tr><td>United Sugar Mills Ltd. (6000 TPD) Extension</td><td>Sadiqabad</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Surgical Cotton -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Surgical Cotton</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Ihsan Sons (Pvt) Limited</td><td>Raiwind</td></tr>
+            <tr><td>Ihsan Sons (Pvt) Ltd. (Extension)</td><td>Raiwind</td></tr>
+            <tr><td>S. Fazal Ilahi & Sons (Pvt) Ltd.</td><td>Raiwind</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Tea Industry -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Tea Industry</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Tapal Tea (Pvt) Ltd. Warehouse</td><td>Karachi</td></tr>
+            <tr><td>Tapal Tea (Pvt.) Ltd.</td><td>Raiwind</td></tr>
+            <tr><td>Tetlea Tea Baluchistan Poly Products (Pvt) Ltd. for Lakson Group</td><td>Hub</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Textile Spinning Mills -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Textile Spinning Mills</h4>
+      <div class="card project-card">
+        <div class="card-body">
+          <p>Completed Over 300 Textile Mill Units covering approx. total <strong>6.00 million spindles</strong>, complete units with Blow Room, Back Process, Autocone & all colony buildings, bungalows, godowns, ancillaries, roads, external development.</p>
+          <p class="text-muted small">(Detail list of Spinning Mills can be provided upon request)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Textile - Weaving Mills -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Textile - Weaving Mills</h4>
+      <div class="card project-card">
+        <div class="card-body">
+          <p>Over 65 Weaving Units in Pakistan and Bangladesh covering approx. total <strong>4500 Airjet and other looms</strong> complete units with sizing, warping & all colony buildings, bungalows, godowns, ancillaries, roads, external development.</p>
+          <p class="text-muted small">(Detail list of Weaving Mills can be provided upon request)</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Textile - Denim Plants -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Textile - Denim Plants</h4>
+      <div class="card project-card">
+        <div class="card-body">
+          <p>Detail list of Denim Units can be provided upon request.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Textile - Finishing Units -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Textile - Finishing Units</h4>
+      <div class="card project-card">
+        <div class="card-body">
+          <p>Detail list of Textile Finishing, Processing & Dyeing Units can be provided upon request.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Textile - Stitching/Garment Units -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Textile - Stitching/Garment Units</h4>
+      <div class="card project-card">
+        <div class="card-body">
+          <p>Detail list of Textile Stitching / Garment Units can be provided upon request.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Textile - Multi-Process Units -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Textile - Multi-Process Units</h4>
+      <div class="card project-card">
+        <div class="card-body">
+          <p>Detail list of Textile Multi-Process Units (Combinations of Spinning, Weaving, Dyeing, Processing, Finishing & Stitching) can be provided upon request.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tyre Manufacturing Unit -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Tyre Manufacturing Unit</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Service Industries Limited</td><td>Gujrat</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Underground Tanks -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Underground Tanks</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 50%;">Project</th>
+              <th style="width: 25%; text-align: left;">Capacity</th>
+              <th style="width: 25%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Underground tank for Pakistan D.O.H.A.</td><td>250,000 Gallon</td><td>Karachi</td></tr>
+            <tr><td>Open Water Reservoir for UTP</td><td>425,000 Gallon</td><td>Badin</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Warehouses -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Warehouses</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Agility Mehran Base</td><td>Super Highway</td></tr>
+            <tr><td>Agility Ravi Logistic</td><td>Lahore</td></tr>
+            <tr><td>Al-Karam Textile Godowns</td><td>Karachi</td></tr>
+            <tr><td>Anoud Ware House</td><td>Sundar</td></tr>
+            <tr><td>Burque Corporation (Pvt.) Limited</td><td>Karachi</td></tr>
+            <tr><td>Dewan Mushtaq & Sons</td><td>—</td></tr>
+            <tr><td>Diamond Enterprises Ware House</td><td>Port Qasim</td></tr>
+            <tr><td>Fazal-e-Rabbi Cold Storage</td><td>Sukkur</td></tr>
+            <tr><td>Friends Industries at S.I.T.E.</td><td>Karachi</td></tr>
+            <tr><td>Gadoon Textile (Cotton Storage Godowns)</td><td>Super Highway</td></tr>
+            <tr><td>Gadoon Textile Stitching Warehouse</td><td>Super Highway</td></tr>
+            <tr><td>Garibsons</td><td>Gharo</td></tr>
+            <tr><td>Hussain Mills Limited Unit – 4</td><td>Multan</td></tr>
+            <tr><td>Habib Hussain Ghee Wala</td><td>Port Qasim</td></tr>
+            <tr><td>K.K. Commodities</td><td>Port Qasim</td></tr>
+            <tr><td>MFTL Ware House</td><td>Karachi</td></tr>
+            <tr><td>Mineral Asia (Pvt.) Limited</td><td>Karachi</td></tr>
+            <tr><td>Naseem Exports (Pvt.) Limited</td><td>Port Qasim</td></tr>
+            <tr><td>Nisar Spinning Yarn Godowns</td><td>Raiwind</td></tr>
+            <tr><td>Oyster Technologies (Pvt.) Limited</td><td>Karachi</td></tr>
+            <tr><td>Paramount Exports</td><td>Port Qasim</td></tr>
+            <tr><td>Pebbles (Pvt.) Limited</td><td>Islamabad</td></tr>
+            <tr><td>Pemcon Warehouses</td><td>Hawksbay</td></tr>
+            <tr><td>Razzaq Construction Company</td><td>—</td></tr>
+            <tr><td>Razziq International Truck Parking Facility & Warehouse</td><td>Port Qasim</td></tr>
+            <tr><td>Retex Global</td><td>Port Qasim</td></tr>
+            <tr><td>S.M. Foods Car Parking Building</td><td>Multan</td></tr>
+            <tr><td>S.M. Foods (Sugar Godown)</td><td>Multan</td></tr>
+            <tr><td>Sheikh Muhammad Shahid</td><td>Port Qasim</td></tr>
+            <tr><td>Sohni Food</td><td>Kotri</td></tr>
+            <tr><td>Sundar Gas LPG Plant</td><td>Port Qasim</td></tr>
+            <tr><td>Tapal Tea (Pvt.) Limited</td><td>Raiwind</td></tr>
+            <tr><td>Tapal Tea (Pvt.) Ltd New Warehouse</td><td>Karachi</td></tr>
+            <tr><td>Tapal Tea (Pvt.) Limited</td><td>Lahore</td></tr>
+            <tr><td>Tapal Tea Warehouse</td><td>Multan</td></tr>
+            <tr><td>Unity Wilmar Agro (Pvt.) Limited</td><td>Kotri</td></tr>
+            <tr><td>Warehouse for Kohinoor Weaving</td><td>Raiwind</td></tr>
+            <tr><td>Warehouse for Ms Rubina Tajammul & Partners</td><td>Port Qasim</td></tr>
+            <tr><td>Warehouse for Paramount Exports</td><td>Port Qasim</td></tr>
+            <tr><td>Warehouse for Peerani Group</td><td>Port Qasim</td></tr>
+            <tr><td>Yousuf Adil at Port Qasim</td><td>Port Qasim</td></tr>
+            <tr><td>Continental Enterprises Warehouses</td><td>Port Qasim</td></tr>
+            <tr><td>Zaman Textile Shell Godowns</td><td>Kotri</td></tr>
+            <tr><td>Zulfiqar Trading Warehouses</td><td>Karachi</td></tr>
+            <tr><td>Daharki Sugar Mills Limited (Extension)</td><td>Daharki</td></tr>
+            <tr><td>Ghotki Sugar Mills Limited (Extension)</td><td>Ghotki</td></tr>
+            <tr><td>United Sugar Mills Limited (Extension)</td><td>Sadiqabad</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Waste Water Treatment Plants -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Waste Water Treatment Plants</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Crescent Bahuman Ltd</td><td>Pindi Bhattian</td></tr>
+            <tr><td>Daharki Sugar Mills Limited</td><td>Daharki</td></tr>
+            <tr><td>Dewan Salman Acrylic Plant</td><td>Hattar</td></tr>
+            <tr><td>Ghotki Sugar Mills Ltd</td><td>Ghotki</td></tr>
+            <tr><td>JDW Sugar Mills Limited BMR</td><td>Rahim Yar Khan</td></tr>
+            <tr><td>JK Sugar Mills Limited</td><td>Katcha Khu</td></tr>
+            <tr><td>Kohinoor Mills Limited</td><td>Raiwind</td></tr>
+            <tr><td>Lucky Knits Dye House</td><td>Kathore</td></tr>
+            <tr><td>Lucky Textile Unit - 4</td><td>Karachi</td></tr>
+            <tr><td>Nishat Chunian</td><td>Raiwind</td></tr>
+            <tr><td>Rana Textile Mills Ltd</td><td>Shahkot</td></tr>
+            <tr><td>Shafi Reso Chem</td><td>Bedian Road</td></tr>
+            <tr><td>Shekhani Industries</td><td>Karachi</td></tr>
+            <tr><td>United Sugar Mills Limited</td><td>Sadiqabad</td></tr>
+            <tr><td>Universal Leather</td><td>Kana</td></tr>
+            <tr><td>Utah Knitting & Dyeing</td><td>Bangladesh</td></tr>
+            <tr><td>Union Fabrics Limited Unit 5</td><td>Karachi</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Wood Industries -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Wood Industries</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Wood Craft</td><td>Port Qasim</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Workshop & Ancillary -->
+    <div class="mb-5 completed-project-section-hidden">
+      <h4 style="color: #f5c43d;" class="mb-3">Workshop & Ancillary</h4>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr style="background-color: #f5c43d; color: white;">
+              <th style="width: 70%;">Project</th>
+              <th style="width: 30%; text-align: left;">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Shahnawaz Limited</td><td>Near Lahore Airport</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Load More Button for Completed Projects -->
+    <div class="text-center mt-4 mb-5">
+      <button id="loadMoreCompletedBtn" class="btn load-more-btn">
+        <i class="fas fa-plus-circle me-2"></i>Load More Categories (50+ more available)
+      </button>
+    </div>
+
+    <!-- Additional Industries Summary -->
+    <div class="row mt-4 pt-3 justify-content-between">
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <div class="card-body text-center">
+            <h6 style="color: #f5c43d;">Food & Beverages</h6>
+            <p class="small">Multiple projects including Rafhan Best Foods, Hilal Foods, Asian Food Industries, and various beverage plants</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card project-card">
+          <div class="card-body text-center">
+            <h6 style="color: #f5c43d;">Fertilizer Plants</h6>
+            <p class="small">Including Fatima Fertilizer, Pak Arab Fertilizer, and Barkat Fertilizer projects</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+    <!-- Complete Team Structure Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Complete Team Structure</h2>
+        </div>
+        
+        <!-- Structural Engineers -->
+        <div class="mb-5">
+          <h3 style="color:#f5c43d;" class="mb-4">Structural Engineers</h3>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr style="background-color:#f5c43d; color: white;">
+                  <th>Name</th>
+                  <th>Experience</th>
+                  <th>Qualifications</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>MUHAMMAD FAROOQ SATTAR</strong></td>
+                  <td>53 Years</td>
+                  <td>B.E. Civil, N.E.D.<br>Associate Member Inst. of Engrs. Pakistan<br>Member PEC</td>
+                </tr>
+                <tr>
+                  <td><strong>MUHAMMAD TAHSEEN KHAN</strong></td>
+                  <td>38 Years</td>
+                  <td>M.S. Civil, U.S.A<br>B.E. Civil, N.E.D.<br>Member American Society of Civil Engrs.<br>Member PEC</td>
+                </tr>
+                <tr>
+                  <td><strong>SEHER GUL</strong></td>
+                  <td>32 Years</td>
+                  <td>M.S. Civil, U.S.A.<br>B.E. Civil, U.K.<br>Associate City &amp; Guilds Inst., U.K.<br>Member PEC</td>
+                </tr>
+                <tr>
+                  <td><strong>ATEEQ-UR-REHMAN</strong></td>
+                  <td>24 Years</td>
+                  <td>B.E. Civil, CECOS<br>Member PEC</td>
+                </tr>
+                <tr>
+                  <td><strong>MUHAMMAD ASSAD AHRAR</strong></td>
+                  <td>11 Years</td>
+                  <td>M.E. (S.E.Q.E), N.E.D.<br>B.E. Civil, N.E.D.<br>Associate Member Inst. of Engrs. Pakistan<br>Member PEC</td>
+                </tr>
+                <tr>
+                  <td><strong>SYEDA FATIMA BUSHRA</strong></td>
+                  <td>8 Years</td>
+                  <td>B.E. Civil, N.E.D.<br>Associate Member Inst. of Engrs. Pakistan<br>Member PEC</td>
+                </tr>
+                <tr>
+                  <td><strong>MUHAMMAD HASHIR KHAN</strong></td>
+                  <td>04 Years</td>
+                  <td>B.E. Civil, N.E.D.</td>
+                </tr>
+                <tr>
+                  <td><strong>MUHAMMAD USMAN NAWAB</strong></td>
+                  <td>2 Years</td>
+                  <td>B.E. Civil, N.E.D.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Architects -->
+        <div class="mb-5">
+          <h3 style="color: #f5c43d;" class="mb-4">Architects</h3>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr style="background-color: #f5c43d; color: white;">
+                  <th>Name</th>
+                  <th>Experience</th>
+                  <th>Qualifications</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>MOHD. SALMAN HANIF KHAN</strong></td>
+                  <td>31 Years</td>
+                  <td>Bachelor of Architecture<br>Affiliate Member IAP AF-3393-25</td>
+                </tr>
+                <tr>
+                  <td><strong>SYED M. KHIZER ABDALI</strong></td>
+                  <td>5 Years</td>
+                  <td>Bachelor of Architecture<br>Member P.C.A.T.P. A-08941</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Quantity Surveyors -->
+        <div class="mb-5">
+          <h3 style="color:#f5c43d;" class="mb-4">Quantity Surveyors</h3>
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead>
+                <tr style="background-color: #f5c43d; color: white;">
+                  <th>Name</th>
+                  <th>Experience</th>
+                  <th>Qualifications</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>MUHAMMAD YOUSUF</strong></td>
+                  <td>49 Years</td>
+                  <td>D.A.E.</td>
+                </tr>
+                <tr>
+                  <td><strong>SYED ALI IBRAR JAFFERY</strong></td>
+                  <td>47 Years</td>
+                  <td>Intermediate</td>
+                </tr>
+                <tr>
+                  <td><strong>ZULFIQAR ALI</strong></td>
+                  <td>42 Years</td>
+                  <td>Diploma in Quantity Surveying</td>
+                </tr>
+                <tr>
+                  <td><strong>TANVEER ASLAM</strong></td>
+                  <td>31 Years</td>
+                  <td>D.A.E. (Civil)</td>
+                </tr>
+                <tr>
+                  <td><strong>MUHAMMAD USMAN HAYDER</strong></td>
+                  <td>26 Years</td>
+                  <td>M.Phil. Construction &amp; Eng Management<br>Bachelors of Engineering Technology (Civil)</td>
+                </tr>
+                <tr>
+                  <td><strong>MUHAMMAD ZEESHAN</strong></td>
+                  <td>16 Years</td>
+                  <td>D.A.E. (Civil)</td>
+                </tr>
+                <tr>
+                  <td><strong>ASHOK LAL</strong></td>
+                  <td>16 Years</td>
+                  <td>D.A.E. (Civil)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Software & Technology Section -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="section-title">Computer Software &amp; Technology</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <h5 style="color: #f5c43d;" class="mb-3">Structural Analysis Software</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check" style="color: #f5c43d;" class="me-2"></i> STAAD III, STAAD Pro</li>
+              <li><i class="fas fa-check" style="color: #f5c43d;" class="me-2"></i> SAP 90</li>
+              <li><i class="fas fa-check" style="color: #f5c43d;" class="me-2"></i> ETABS</li>
+              <li><i class="fas fa-check" style="color: #f5c43d;" class="me-2"></i> SAFE</li>
+            </ul>
+          </div>
+
+          <div class="col-md-6">
+            <h5 style="color: #f5c43d;" class="mb-3">Design &amp; Visualization</h5>
+            <ul class="list-unstyled">
+              <li><i class="fas fa-check" style="color: #f5c43d;" class="me-2"></i> AutoCAD 2022</li>
+              <li><i class="fas fa-check" style="color: #f5c43d;" class="me-2"></i> 3D Studio Max</li>
+              <li><i class="fas fa-check" style="color: #f5c43d;" class="me-2"></i> REVIT (BIM)</li>
+              <li><i class="fas fa-check" style="color: #f5c43d;" class="me-2"></i> LUMION</li>
+              <li><i class="fas fa-check" style="color: #f5c43d;" class="me-2"></i> SKETCHUP</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Akbar &amp; Associates</h3>
+              <p>
+                Karachi &amp; Lahore <br>
+                Pakistan<br><br>
+                <strong>Phone:</strong>
+              </p>
+              <p>
+                <a href="tel:+922134529091">021-34529091-4 (Karachi)</a><br>
+                <a href="tel:+924235770033">042-35770033-34 (Lahore)</a>
+              </p><br>
+              <strong>Email:</strong>
+              <a href="/cdn-cgi/l/email-protection#3e575058517e5f555c5f4c5f505a5f4d4d515d575f4a5b4d105d5153"><span class="__cf_email__" data-cfemail="2e474048416e4f454c4f5c4f404a4f5d5d414d474f5a4b5d004d4143">[email&#160;protected]</span></a><br>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="expertise.html">Expertise</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="resume.html">Company Profile</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AKBAR &amp; ASSOCIATES</span></strong>. All Rights Reserved
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="btn btn-primary btn-lg print-btn" onclick="window.print()">
+    <i class="fas fa-print me-2"></i>Print/PDF
+  </button>
+
+  <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Current Projects Load More
+      const loadMoreBtn = document.getElementById('loadMoreBtn');
+      const hiddenSections = document.querySelectorAll('.project-section-hidden');
+      let currentlyShown = 0;
+      const sectionsPerLoad = 4;
+
+      if (loadMoreBtn && hiddenSections.length > 0) {
+        loadMoreBtn.addEventListener('click', function() {
+          for (let i = currentlyShown; i < Math.min(currentlyShown + sectionsPerLoad, hiddenSections.length); i++) {
+            hiddenSections[i].style.display = 'block';
+            hiddenSections[i].style.opacity = '0';
+            hiddenSections[i].style.transition = 'opacity 0.5s ease-in-out';
+            setTimeout(() => { hiddenSections[i].style.opacity = '1'; }, 100);
+          }
+          currentlyShown += sectionsPerLoad;
+          if (currentlyShown >= hiddenSections.length) {
+            loadMoreBtn.style.display = 'none';
+          }
+          if (currentlyShown < hiddenSections.length) {
+            const remaining = hiddenSections.length - currentlyShown;
+            loadMoreBtn.innerHTML = `<i class="fas fa-plus-circle me-2"></i>Load More Projects (${remaining} more available)`;
+          }
+        });
+      }
+
+      // Completed Projects Load More
+      const loadMoreCompletedBtn = document.getElementById('loadMoreCompletedBtn');
+      const completedHiddenSections = document.querySelectorAll('.completed-project-section-hidden');
+      let completedCurrentlyShown = 0;
+      const completedSectionsPerLoad = 5;
+
+      if (loadMoreCompletedBtn && completedHiddenSections.length > 0) {
+        loadMoreCompletedBtn.addEventListener('click', function() {
+          for (let i = completedCurrentlyShown; i < Math.min(completedCurrentlyShown + completedSectionsPerLoad, completedHiddenSections.length); i++) {
+            completedHiddenSections[i].style.display = 'block';
+            completedHiddenSections[i].style.opacity = '0';
+            completedHiddenSections[i].style.transition = 'opacity 0.5s ease-in-out';
+            setTimeout(() => { completedHiddenSections[i].style.opacity = '1'; }, 100);
+          }
+          completedCurrentlyShown += completedSectionsPerLoad;
+          if (completedCurrentlyShown >= completedHiddenSections.length) {
+            loadMoreCompletedBtn.style.display = 'none';
+          }
+          if (completedCurrentlyShown < completedHiddenSections.length) {
+            const remaining = completedHiddenSections.length - completedCurrentlyShown;
+            loadMoreCompletedBtn.innerHTML = `<i class="fas fa-plus-circle me-2"></i>Load More Categories (${remaining}+ more available)`;
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
