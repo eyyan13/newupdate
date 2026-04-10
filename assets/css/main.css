@@ -2838,3 +2838,86 @@ a:active {
 .projects-redirect-btn:hover i {
   transform: translateX(5px);
 }
+
+  /* ===== Animation Keyframes ===== */
+    @keyframes logoReveal {
+      from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.97);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ===== Clients / Partners Logo Section ===== */
+    .clients-logos {
+      padding: 60px 0;
+      background-color: #f8f9fa;
+      border-top: 1px solid #e0e0e0;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    /* Section heading — hidden until visible */
+    .clients-logos .section-header {
+      opacity: 0;
+      animation: fadeInDown 0.7s ease forwards;
+      animation-play-state: paused;
+    }
+
+    .clients-logos .section-header h2 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #1a1a2e;
+      margin-bottom: 8px;
+    }
+
+   .clients-logos .section-header p {
+  font-size: 15px;
+  color: #6c757d;
+  margin-bottom: 8px;   /* 30px se 8px */
+}
+    /* Logo wrapper — hidden until visible */
+    .clients-logos .logo-wrapper {
+      opacity: 0;
+      animation: logoReveal 0.9s cubic-bezier(0.22, 1, 0.36, 1) 0.3s forwards;
+      animation-play-state: paused;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+      padding: 40px 30px;
+      overflow: hidden;
+    }
+
+    /* Trigger animations when section scrolls into view */
+    .clients-logos.is-visible .section-header,
+    .clients-logos.is-visible .logo-wrapper {
+      animation-play-state: running;
+    }
+
+    /* Image styling */
+    .clients-logos .partner-logos-img {
+      width: 100%;
+      object-fit: contain;
+      max-height: 900px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.4s ease;
+    }
+
+    .clients-logos .partner-logos-img:hover {
+      transform: scale(1.01);
+    }
